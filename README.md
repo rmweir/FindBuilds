@@ -2,16 +2,26 @@
 Searches Rancher's PR build logs for given string
 
 ### Setup ###
-must have python3
+Requires python3
 
-pip3 install -r requirements.txt
+`pip3 install -r requirements.txt`
 
 ### Help ###
-python start.py help
+`python3 start.py help`
 
 ### How to use ###
-params: string to look for, newest drone index to start at
 
-options (must be after params): -i: how many logs to go through (default is 250)
+```
+python3 start.py "FAILED test_rbac.py::test_project_owner" 4249 -i 500
+```
 
-example: python3 start.py "someuniquetest failed" 3766 -i 500
+params
+```
+1. String to look for. Use a specific string which represents your error. 
+2. The newest Drone index to start at. This is the ID in a drone url, not the PR or issue ID.
+```
+
+options (must be after params)
+```
+-i: how many logs to go backwards through (default is 250)
+```
