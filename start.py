@@ -27,8 +27,8 @@ def isMatch(url):
 
 
 if sys.argv[1] == "help":
-    print("Syntax: python3 start.py <search string> <last drone build index>")
-    print("\nExample: python3 start.py \"not found error\" 2111")
+    print("Syntax: python start.py <search string> <last drone build index>")
+    print("\nExample: python start.py \"not found error\" 2111")
     print("\nOptional flags:\n  -i (number of logs to search backwards through)")
     exit()
 

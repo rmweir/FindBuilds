@@ -7,12 +7,12 @@ Requires python3
 `pip3 install -r requirements.txt`
 
 ### Help ###
-`python3 start.py help`
+`python start.py help`
 
 ### How to use ###
 
 ```
-python3 start.py "FAILED test_rbac.py::test_project_owner" 4249 -i 500
+python start.py "FAILED test_rbac.py::test_project_owner" 4249 -i 500
 ```
 
 params
