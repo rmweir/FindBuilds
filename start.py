@@ -5,7 +5,7 @@ import sys
 from functools import partial
 from multiprocessing.dummy import Pool
 
-baseurl = "https://drone-pr.rancher.io/api/repos/rancher/rancher/builds"
+baseurl = "http://drone-pr.rancher.io/api/repos/rancher/rancher/builds"
 iterations = 250
 current = [0]
 
@@ -130,4 +130,4 @@ if find_failures:
     print("Write complete.")
 
 else:
-    print(list(filter(None.__ne__, found)
+    print(list(filter(None.__ne__, found)))
