@@ -93,12 +93,12 @@ def isFailure(url, current):
 
 
 if sys.argv[1] == "help":
-    print("Syntax: python start.py <search string> <last drone build index>")
+    print("Syntax: python3 start.py <search string> <last drone build index>")
     print("Syntax (find top 10 failed): python start.py <last drone build index> -ff")
-    print("Example: python start.py \"not found error\" 2111")
+    print("Example: python3 start.py \"not found error\" 2111")
     print("\nOptional flags:\n-i (number of logs to search through\n-url (use specified base url instead of default\n \
             -ff (find top 10 most failed tests")
-    exit
+    exit()
 
 if find_failures:
     drone_index = sys.argv[1]
