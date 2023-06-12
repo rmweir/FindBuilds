@@ -6,14 +6,15 @@ from functools import partial
 from multiprocessing.dummy import Pool
 
 baseurl = "http://drone-pr.rancher.io/api/repos/rancher/rancher/builds"
+# baseurl = "http://drone-publish.rancher.io/api/repos/rancher/rancher/builds"
 iterations = 250
 current = [0]
 
 find_failures = False
 
-# use ["/1/1", "/1/2", "/2/1", "/2/2", "/3/1", "/3/2"] to search everything
+# use ["/1/1", "/1/2", "/2/1", "/2/2", "/3/1", "/3/2", "/4/1", "/4/2"] to search everything
 # (windows and clone logs)
-log_parts = ["/1/2", "/2/2"]
+log_parts = ["/1/2", "/2/2", "/3/2", "/4/2"]
 
 for index, arg in enumerate(sys.argv):
     if arg == "-i":
